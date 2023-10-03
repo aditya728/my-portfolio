@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Portfolio</title>
+    <script src="https://kit.fontawesome.com/a348b7b32d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/myLogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()""></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Web Developer</p>
+                <h1>Hi, I'm <span>Aditya</span><br> Maurya from India.</h1>
+            </div>
+        </div>
+        <div class="homeButton">
+            <a href="#" class="arrow"><i class="fa-solid fa-arrow-up"></i> </a>
+        </div>
+    </div> 
+
+<!-- ----------------------about--------------------------------- -->
+
+    <div id="about" style="overflow: hidden;">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About <span>Me</span></h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur molestias alias nostrum numquam, iure id recusandae accusantium iste illo voluptatibus doloremque, commodi dicta. Ratione, aspernatur? Qui porro cupiditate ullam nemo.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links activeLink" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents activeTab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web 
+                                Development
+                            </span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Sep' 2023 - Current</span><br>Web Developer at Maestloper Media</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Current(Sem V)</span><br>BSc. Computer Science from SDSM College</li>
+                            <li><span>2020 - 2021</span><br>HSC from SDSM College</li>
+                            <li><span>2018 - 2019</span><br>SSC from Don Bosco School</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------------------------services----------------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My <span>Services</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda omnis et fuga vitae facilis error repudiandae consequuntur odio ea! Aliquid eaque quis esse ullam eos? Placeat distinctio quo vero accusamus saepe.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda omnis et fuga vitae facilis error repudiandae consequuntur odio ea! Aliquid eaque quis esse ullam eos? Placeat distinctio quo vero accusamus saepe.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda omnis et fuga vitae facilis error repudiandae consequuntur odio ea! Aliquid eaque quis esse ullam eos? Placeat distinctio quo vero accusamus saepe.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------portfolio------------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My <span>Works</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from PlayStore.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from PlayStore.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from PlayStore.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -----------------------Contact------------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact <span>Me</span></h1>
+                    <p><i class="fa-solid fa-envelope"></i> asm71035@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 85307XXX68</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Adtiya's Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 Aditya Maurya -- All rights reserved.</p>
+        </div>
+    </div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links ");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("activeLink");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("activeTab");
+        }
+        event.currentTarget.classList.add("activeLink")
+        document.getElementById(tabname).classList.add("activeTab");
+    }
+</script>
+
+<script>
+
+    var side =  document.getElementById("sidemenu");
+
+    function openmenu(){
+        side.style.right = "0";
+    }
+    function closemenu(){
+        side.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
